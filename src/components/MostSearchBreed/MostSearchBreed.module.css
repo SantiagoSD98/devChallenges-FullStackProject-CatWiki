@@ -1,0 +1,50 @@
+.mostSearchBreedContainer {
+  min-height: 68.6rem;
+  background-color: #E3E1DC;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.mostSearchBreedBreedContentContainer {
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 68.6rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mostSearchBreedText {
+  margin: 0;
+  font-weight: 500;
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.mostSearchBreedText::before {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  left: 0;
+  bottom: -0.5rem;
+  border: 1.9px solid black;
+}
+
+.mostSearchBreedBreed {
+  font-weight: 600;
+  margin: 1.5rem 0 0 0;
+  font-weight: 500;
+  position: relative;
+  font-size: 1.8rem;
+}
+.mostSearchBreedTitle {
+
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+
+.mostSearchBreedButton {
+  font-size: 1.8rem !important;
+  color:rgba(41, 21, 7, 0.6) !important;
+}

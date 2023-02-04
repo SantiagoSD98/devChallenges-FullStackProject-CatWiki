@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.footerText {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 2rem 0 0;
+}
