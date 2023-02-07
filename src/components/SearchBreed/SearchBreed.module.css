@@ -13,3 +13,58 @@
   color: #ffff;
   font-size: 2.4rem;
 }
+
+.inputContainer {
+  position: relative;
+}
+
+.textFieldStyles {
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-radius: 6rem;
+  line-height: 2.2rem;
+  outline: none;
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  background-color: #ffff;
+}
+
+.iconSearch {
+  right: 1rem;
+  top: 50%;
+  color: #000;
+  font-size: 1.8rem !important;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.inputStyles {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.8rem !important;
+}
+
+.listOptions {
+  top: 120%;
+  width: 100%;
+  z-index: 20;
+  padding: 1rem;
+  overflow: auto;
+  max-height: 22rem;
+  position: absolute;
+  border-radius: 2.2rem;
+  background-color: #fff;
+}
+
+.optionText {
+  padding: 1rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 1.8rem !important;
+}
+
+.optionText:hover {
+  cursor: pointer;
+  background-color: rgba(151, 151, 151, 0.1);
+}

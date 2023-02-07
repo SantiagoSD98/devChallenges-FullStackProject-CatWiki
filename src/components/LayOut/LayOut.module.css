@@ -1,0 +1,8 @@
+.mainBody { 
+  display:flex; 
+  min-height: 100vh;
+  flex-direction:column;
+}
+
+header{ min-height:50px; background:lightcyan; }
+footer{ min-height:50px; background:PapayaWhip; }

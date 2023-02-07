@@ -1,0 +1,17 @@
+.TopBreedsContainer {
+  flex: 1;
+}
+
+.TopBreedTitle {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+  color: rgba(41, 21, 7, 1);
+}
+
+.TopBreedText {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: rgba(41, 21, 7, 1);
+}

@@ -5,12 +5,10 @@ import './App.css';
 
 const App = () => {
   return (
-    <Container>
-      <NavbarApp />
+    <Container fluid className="AppContainer">
       <SearchBreed/>
       <MostSearchBreed/>
       <HaveACat/>
-      <Footer/>
     </Container>
   );
 }
