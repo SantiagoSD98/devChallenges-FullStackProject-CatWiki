@@ -18,6 +18,7 @@
 .CatSpecsFeat {
   font-weight: 700;
   font-size: 1.6rem;
+  width: 25%;
   line-height: 1.9rem;
 }
 
@@ -26,10 +27,33 @@
   font-size: 1.6rem;
   line-height: 1.9rem;
   margin: 3rem 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .CatSpecsText {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.2rem;
+}
+
+.levelContainer {
+  display: flex;
+}
+
+.levelFill {
+  margin: 0 0.5rem;
+  width: 6rem;
+  height: 1.2rem;
+  border-radius: 0.8rem;
+  background-color: rgba(84, 68, 57, 1);
+}
+
+.levelUnfill {
+  margin: 0 0.5rem;
+  width: 6rem;
+  height: 1.2rem;
+  border-radius: 0.8rem;
+  background-color: rgba(224, 224, 224, 1);
 }

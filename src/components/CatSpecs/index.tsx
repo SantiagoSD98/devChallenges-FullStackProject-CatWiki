@@ -5,6 +5,8 @@ import DummyPic from "../../assets/imgs/DummyPhoto.png";
 
 const CatSpecs = () => {
 
+  const LEVELS = [1, 2, 3, 4, 5];
+
   const catDummyData = {
     breed: "Bengal",
     description: "Bengals are a lot of fun to live with, but they're definitely not the cat for everyone, or for first-time cat owners. Extremely intelligent, curious and active, they demand a lot of interaction and woe betide the owner who doesn't provide it.",
@@ -20,6 +22,10 @@ const CatSpecs = () => {
     social: 5,
     stranger: 3 
   }
+
+  const printLevels = (catFeat: any) => {
+    return LEVELS.map((singleLevel: any) => singleLevel <= catFeat ? <div className={classes.levelFill} /> : <div className={classes.levelUnfill} /> )
+  };
 
 
   return (
@@ -51,27 +57,51 @@ const CatSpecs = () => {
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Adaptability: </span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.adaptability)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Affection level:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.affection)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Child Friendly:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.friendly)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Grooming:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.grooming)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Intelligence:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.intelligence)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Health Issues:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.healthIssues)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Social needs:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.social)}
+            </div>
           </p>
           <p className={classes.CatSpecsFeatText}>
             <span className={classes.CatSpecsFeat}>Stranger friendly:</span>
+            <div className={classes.levelContainer}>
+              {printLevels(catDummyData.stranger)}
+            </div>
           </p>
           
         </Col>
