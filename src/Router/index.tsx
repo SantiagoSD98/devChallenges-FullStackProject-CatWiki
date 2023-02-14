@@ -1,6 +1,6 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { TopBreeds, CatSpecs } from "../components";
 import App from "../App";
+import { TopBreeds, CatSpecs } from "../components";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const Router = () => {
 

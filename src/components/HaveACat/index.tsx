@@ -1,4 +1,4 @@
-import React from "react";
+import { useNavigate } from "react-router";
 import classes from "./HaveACat.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Image1 from "../../assets/imgs/image 1.png";
@@ -8,6 +8,13 @@ import { Button } from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const HaveACat = () => {
+
+  const navigate = useNavigate();
+
+  const handleReadMore = () => {
+    navigate("/catSpecs");
+  };
+
   return (
     <Container className={classes.haveACatContainer}>
       <div className={classes.haveACatContentContainer}>
@@ -18,7 +25,7 @@ const HaveACat = () => {
               Having a cat around you can actually trigger the release of calming chemicals in your body
               which lower stress and anxiety levels
             </p>
-            <Button className={classes.haveACatButton} endIcon={<ArrowRightAltIcon />}>
+            <Button className={classes.haveACatButton} endIcon={<ArrowRightAltIcon />} onClick={handleReadMore}>
               Read More
             </Button>
           </Col>

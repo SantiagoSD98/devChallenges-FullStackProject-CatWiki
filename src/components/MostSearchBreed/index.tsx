@@ -1,11 +1,14 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router";
 import classes from "./MostSearchBreed.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import DummyPic from "../../assets/imgs/DummyPhoto.png";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const MostSearchBreed = () => {
+
+  const navigate = useNavigate();
   
   const arrayImg = [
     { breed: "bengal", first: true },
@@ -13,6 +16,10 @@ const MostSearchBreed = () => {
     { breed: "norweign forest cat", first: false },
     { breed: "selkirik rex", first: false },
   ];
+
+  const handleReadMoreClick = () => {
+    navigate("/topBreeds");
+  };
 
   return (
     <Container fluid className={`${classes.mostSearchBreedContainer}`}>
@@ -28,7 +35,7 @@ const MostSearchBreed = () => {
             <h1 className={classes.mostSearchBreedTitle}>66+ Breeds For you to discover</h1>
           </Col>
           <Col sm={6} md={6} lg={6} className="text-end ">
-            <Button className={classes.mostSearchBreedButton} endIcon={<ArrowRightAltIcon />}>
+            <Button className={classes.mostSearchBreedButton} endIcon={<ArrowRightAltIcon />} onClick={handleReadMoreClick}>
               Read More
             </Button>
           </Col>
